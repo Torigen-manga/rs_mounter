@@ -24,6 +24,6 @@ pub struct ReadState {
 pub struct ChapterEntry {
     pub id: String,
     pub title: String,
-    pub timestamp: Option<String>,
+    pub timestamp: String,
 }
 
