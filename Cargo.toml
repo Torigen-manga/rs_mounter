@@ -8,7 +8,6 @@ repository = "https://github.com/Torigen-manga/rs_mounter"
 homepage = "https://github.com/Torigen-manga/rs_mounter"
 readme = "README.md"
 keywords = ["torigen", "manga", "wasm"]
-categories = ["wasm", "plugin", "web-programming"]
 authors = ["Notreallyuri <yurivgr@icloud.com>"]
 
 [lib]
