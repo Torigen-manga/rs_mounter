@@ -1,6 +1,7 @@
 use crate::generated::{MangaEntry, PagedResults, Tag};
 use std::collections::HashMap;
 use serde::{Deserialize, Serialize};
+use async_trait::async_trait;
 
 
 #[derive(Deserialize, Serialize, Debug, Clone)]
@@ -33,6 +34,7 @@ pub struct SearchRequest {
     pub parameters: Option<HashMap<String, SearchParamValue>>,
 }
 
+#[async_trait]
 pub trait SearchProvider {
     fn get_search_results(&self, query: SearchRequest) -> Result<PagedResults<MangaEntry>, String>;
     fn get_search_tags(&self) -> Result<Vec<Tag>, String> {
