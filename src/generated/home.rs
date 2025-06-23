@@ -16,6 +16,7 @@ pub struct TextEntry {
 }
 
 #[derive(Deserialize, Serialize, Debug, Clone)]
+#[serde(tag = "type", content = "data")]
 pub enum SectionEntry {
     Manga(MangaEntry),
     Text(TextEntry),
