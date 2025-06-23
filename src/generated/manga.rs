@@ -7,6 +7,7 @@ pub enum Status {
     Completed,
     Hiatus,
     Cancelled,
+    Unknown
 }
 
 #[derive(Deserialize, Serialize, Debug, Clone)]
