@@ -1,6 +1,5 @@
-
+use super::MangaEntry;
 use serde::{Deserialize, Serialize};
-
 
 #[derive(Deserialize, Serialize, Debug, Clone)]
 pub enum SectionType {
@@ -11,17 +10,24 @@ pub enum SectionType {
 }
 
 #[derive(Deserialize, Serialize, Debug, Clone)]
-pub struct SectionItem {
+pub struct TextEntry {
     pub id: String,
-    pub title: String,
-    pub image: String,
+    pub name: String,
+}
+
+#[derive(Deserialize, Serialize, Debug, Clone)]
+pub enum SectionEntry {
+    Manga(MangaEntry),
+    Text(TextEntry),
 }
 
 #[derive(Deserialize, Serialize, Debug, Clone)]
 pub struct Section {
     pub id: String,
     pub title: String,
-    pub items: Vec<SectionItem>,
+    pub items: Vec<SectionEntry>,
     pub section_type: SectionType,
     pub contain_more: bool,
 }
+
+pub type Homepage = Vec<Section>;
