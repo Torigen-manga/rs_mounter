@@ -1,6 +1,6 @@
 [package]
 name = "torigen_mounter"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2024"
 description = "Core functionality for Torigen, a tool for mounting and managing Tor hidden services."
 license = "MIT"
