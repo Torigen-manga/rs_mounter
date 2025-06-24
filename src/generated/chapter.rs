@@ -6,8 +6,6 @@ pub struct Chapter {
     pub title: String,
     pub number: u32,
     pub pages: Vec<String>,
-    pub language: Option<String>,
-    pub release_date: Option<String>,
     pub read_state: Option<ReadState>,
 }
 
@@ -24,4 +22,5 @@ pub struct ChapterEntry {
     pub timestamp: String,
     pub scanlator: Option<String>,
     pub groups: Option<Vec<String>>,
+    pub read_state: Option<ReadState>,
 }
