@@ -8,7 +8,7 @@ pub struct SourceDependencies {
 }
 
 #[derive(Deserialize, Serialize, Debug, Clone)]
-pub enum Capabailities {
+pub enum Capabilities {
     #[serde(rename = "supports_homepage")]
     SupportsHomepage,
     #[serde(rename = "supports_search")]
@@ -31,7 +31,7 @@ pub struct SourceInfo {
     pub base_url: String,
     pub version: Option<String>,
     pub dependencies: Option<Vec<SourceDependencies>>,
-    pub capabilities: Vec<Capabailities>,
+    pub capabilities: Vec<Capabilities>,
 }
 
 pub trait SourceProvider:
