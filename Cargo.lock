@@ -124,7 +124,7 @@ dependencies = [
 
 [[package]]
 name = "torigen_mounter"
-version = "0.4.3"
+version = "0.4.4"
 dependencies = [
  "async-trait",
  "serde",
