@@ -1,5 +1,5 @@
 [package]
-name = "torigen_mounter"
+name = "torigen-core"
 version = "0.4.6"
 edition = "2024"
 description = "Core functionality for Torigen, a tool for mounting and managing Tor hidden services."

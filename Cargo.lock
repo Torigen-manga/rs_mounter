@@ -123,7 +123,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "torigen_mounter"
+name = "torigen-core"
 version = "0.4.6"
 dependencies = [
  "async-trait",
