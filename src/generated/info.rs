@@ -5,9 +5,9 @@ use super::{Capabilities, SourceDependencies};
 pub struct SourceInfo {
     pub id: String,
     pub name: String,
+    pub icon_url: String,
+    pub base_url: String,
     pub version: String,
-    pub description: String,
-    pub icon: Option<String>,
     pub dependencies: Vec<SourceDependencies>,
     pub capabilities: Vec<Capabilities>,
 }
