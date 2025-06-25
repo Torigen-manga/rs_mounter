@@ -1,3 +1,2 @@
-pub mod generated;
 pub mod core;
-
+pub mod generated;

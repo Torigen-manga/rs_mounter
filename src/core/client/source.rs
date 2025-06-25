@@ -1,4 +1,4 @@
-use super::{HomepageProvider, MangaProvider, SearchProvider, SourceFieldsMetadata};
+use super::{HomepageClient, MangaClient, SearchClient, SourceFieldsMetadata};
 use serde::{Deserialize, Serialize};
 
 #[derive(Deserialize, Serialize, Debug, Clone)]
@@ -34,8 +34,8 @@ pub struct SourceInfo {
     pub capabilities: Vec<Capabilities>,
 }
 
-pub trait SourceProvider:
-    HomepageProvider + SearchProvider + MangaProvider + SourceFieldsMetadata
+pub trait SourceClient:
+    HomepageClient + SearchClient + MangaClient + SourceFieldsMetadata
 {
     fn get_source_info(&self) -> SourceInfo;
 }

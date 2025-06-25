@@ -2,8 +2,12 @@ use crate::generated::{Chapter, ChapterEntry, Manga};
 use async_trait::async_trait;
 
 #[async_trait]
-pub trait MangaProvider {
+pub trait MangaClient {
     async fn get_manga_details(&self, manga_id: &str) -> Result<Manga, String>;
     async fn get_chapters(&self, manga_id: &str) -> Result<Vec<ChapterEntry>, String>;
-    async fn get_chapter_details(&self, manga_id: &str, chapter_id: &str) -> Result<Chapter, String>;
+    async fn get_chapter_details(
+        &self,
+        manga_id: &str,
+        chapter_id: &str,
+    ) -> Result<Chapter, String>;
 }

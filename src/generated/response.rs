@@ -5,6 +5,6 @@ use serde::{Deserialize, Serialize};
 pub struct HttpResponse {
     pub id: String,
     pub status: u16,
-    pub body: String,
+    pub body: Option<String>,
     pub error: Option<String>,
 }
