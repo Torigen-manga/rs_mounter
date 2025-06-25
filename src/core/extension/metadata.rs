@@ -8,6 +8,6 @@ pub struct MetadataSchema {
     pub search: HashMap<String, MetadataModel>,
 }
 
-pub trait SourceFieldsMetadata {
+pub trait SourceMetadataProvider {
     fn get_metadata(&self) -> MetadataSchema;
 }
