@@ -1,20 +1,25 @@
-pub mod manga;
+pub mod capabilities;
 pub mod chapter;
-pub mod tag;
+pub mod dependency;
 pub mod home;
-pub mod results;
+pub mod info;
+pub mod manga;
+pub mod metadata;
 pub mod request;
 pub mod response;
+pub mod results;
 pub mod search;
-pub mod metadata;
+pub mod tag;
 
-
-pub use manga::*;
+pub use capabilities::*;
 pub use chapter::*;
-pub use tag::*;
+pub use dependency::*;
 pub use home::*;
-pub use results::*;
-pub use search::*;
+pub use info::*;
+pub use manga::*;
+pub use metadata::*;
 pub use request::*;
 pub use response::*;
-pub use metadata::*;
+pub use results::*;
+pub use search::*;
+pub use tag::*;

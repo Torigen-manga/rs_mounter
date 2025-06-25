@@ -1,5 +1,5 @@
-use std::collections::HashMap;
 use serde::{Deserialize, Serialize};
+use std::collections::HashMap;
 
 #[derive(Deserialize, Serialize, Debug, Clone)]
 pub enum SelectModel {
@@ -37,3 +37,9 @@ pub struct MetadataModel {
 }
 
 pub type MetadataSchemaMap = HashMap<String, MetadataModel>;
+
+#[derive(Deserialize, Serialize, Debug, Clone)]
+pub struct MetadataSchema {
+    pub view_more: HashMap<String, MetadataSchemaMap>,
+    pub search: HashMap<String, MetadataModel>,
+}
