@@ -1,4 +1,4 @@
-# Torigen Mounter
+# Torigen Core
 
 A specialized Rust library developed exclusively for the **Torigen Reader** project. This library handles mounting and integration of various manga sources into the Torigen Reader ecosystem.
 
