@@ -166,7 +166,7 @@ macro_rules! export_wasm_extension {
             EXTENSION.get_or_init(|| WasmExtensionWrapper::new(<$extension_type>::new()))
         }
 
-        #[no_mangle]
+        #[unsafe(no_mangle)]
         pub unsafe extern "C" fn extension_call(
             method_name_ptr: *const u8,
             method_name_len: usize,
