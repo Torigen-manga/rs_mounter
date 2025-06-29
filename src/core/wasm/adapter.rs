@@ -167,7 +167,7 @@ macro_rules! export_wasm_extension {
         }
 
         #[no_mangle]
-        pub extern "C" fn extension_call(
+        pub unsafe extern "C" fn extension_call(
             method_name_ptr: *const u8,
             method_name_len: usize,
             args_ptr: *const u8,
