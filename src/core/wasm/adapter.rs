@@ -157,8 +157,8 @@ pub trait WasmExtensionProvider {
 macro_rules! export_wasm_extension {
     ($extension_type:ty) => {
         use std::sync::OnceLock;
-        use torigen_core::WasmExtension;
-        use torigen_wasm_helper::{WasmExtensionProvider, WasmExtensionWrapper};
+        use super::WasmExtension;
+        use super::{WasmExtensionProvider, WasmExtensionWrapper};
 
         static EXTENSION: OnceLock<WasmExtensionWrapper<$extension_type>> = OnceLock::new();
 
