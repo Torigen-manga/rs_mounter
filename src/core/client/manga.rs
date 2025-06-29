@@ -1,4 +1,4 @@
-use crate::generated::{Chapter, ChapterEntry, Manga};
+    use crate::generated::{Chapter, ChapterEntry, Manga};
 use async_trait::async_trait;
 
 #[async_trait]
